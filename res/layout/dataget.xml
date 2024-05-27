@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/b_dialog_seri_appr_chk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:layout_weight = "1"
+    	android:orientation="vertical"
+    	>
+    	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        
+	        >
+		    <Button
+		        android:id="@+id/bDataGet"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:text="기초 데이타 수신..."
+		        />
+	    </LinearLayout>
+		    		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="30dp"
+	        android:orientation="vertical" >
+	
+	    	<TextView
+		        android:id="@+id/tvDataGet"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="* 최신 데이타이므로  데이타 수신이 필요없습니다."
+		        android:textColor="#ff0000"
+		        />
+		
+		    <TextView
+		        android:id="@+id/tv_az_modi_date"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="* 최종 수신일시 : 미수신"
+		        android:textColor="#ff0000"
+		        />
+	    </LinearLayout>
+	
+	    <TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="5dp"
+			android:stretchColumns="1">
+			<TableRow>
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:text="제조사 :" />
+			    <Spinner
+			        android:id="@+id/sp_make"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"/>
+		    </TableRow>
+		    
+	        <TableRow>
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:text="공장 :" />
+			    <Spinner
+			        android:id="@+id/sp_make_fact"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"/>
+			</TableRow>
+	        </TableLayout>
+		    
+		
+		    			    
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+		    <Button
+		        android:id="@+id/b_insp"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:text="과거 BS 점검내역 수신..."
+				/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="40dp"
+	        android:orientation="vertical" >
+	
+		    <TextView
+		        android:id="@+id/tv_az_modi_date2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="* 최종 수신일시 : 미수신"
+		        android:textColor="#ff0000"
+		        />
+		    <TextView
+		        android:id="@+id/tv_fact_name"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="* 수신공장 : 미수신"
+		        android:textColor="#ff0000"
+		        />
+		    </LinearLayout>
+    </LinearLayout>
+	    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight = "0"
+        >
+
+        <Button
+            android:id="@+id/bBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="뒤로" />
+    </LinearLayout>
+    
+</LinearLayout>

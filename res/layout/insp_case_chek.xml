@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>	
+	
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight = "4"
+		android:gravity="bottom"
+		>
+		
+		<TableRow>
+	    	<LinearLayout
+			    android:id="@+id/linCase"
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="3"
+			    android:focusable="false"
+			    android:focusableInTouchMode="false"
+			    android:orientation="vertical"
+			    android:background="@color/chk_false"
+			    android:layout_margin="5dp"
+			    >
+			</LinearLayout>	
+	    	    
+	    	<LinearLayout
+			    android:id="@+id/linChek"
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="4"
+			    android:focusable="false"
+			    android:focusableInTouchMode="false"
+			    android:orientation="vertical"
+			    android:background="@color/chk_false"
+			    android:layout_margin="5dp"
+			     >
+			</LinearLayout>	
+	    	    	    	    
+		</TableRow>
+	</TableLayout>
+
+   	<LinearLayout
+	    android:id="@+id/linCase_Chek"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight = "2"
+		android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:orientation="vertical"
+	    android:background="@color/chk_false"
+	    android:layout_margin="5dp"
+	     >
+	</LinearLayout>	
+			    				
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:stretchColumns="0,1,2"
+		android:layout_weight = "0">
+		<TableRow>
+	    
+		    <Button
+		        android:id="@+id/b_delete"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="30dp"
+		        android:text="선택삭제" />
+		    <Button
+		        android:id="@+id/b_ok"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="확인" />
+		    <Button
+		        android:id="@+id/b_cancel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="취소" />
+		    	    
+		</TableRow>
+	</TableLayout>
+				
+</LinearLayout>

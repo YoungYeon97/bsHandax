@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"  
+ 	android:orientation="vertical"
+ 	>
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" >
+    	<TextView  
+	 		android:id="@+id/dataItem01"  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+		    android:textSize="8pt"
+		    android:padding="5dip"
+		    android:text = "[table code]"
+		    />
+    	<TextView  
+	 		android:id="@+id/dataItem02"  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:textStyle="bold"
+		    android:textSize="8pt"
+		    android:padding="5dip"
+		    android:text = "Table Name"
+		    />
+	</RelativeLayout>   
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<TextView  
+		    android:id="@+id/tvdataitem"
+			android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:paddingRight="7px"
+		    android:textSize="6pt"
+		    android:textColor="#FFE4C4"
+		    android:text = "전체건수 :"
+		    />
+		<TextView  
+	 		android:id="@+id/dataItem03"  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/tvdataitem"
+			android:paddingRight="7px"
+		    android:textSize="6pt"
+		    android:text = "총 0건"
+		    />
+				    
+		<TextView  
+	 		android:id="@+id/dataItem04"  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:textColor= "@color/lk0"
+		    android:textSize="6pt"
+			android:paddingRight="1dip"
+		    android:text = "대기"    
+		    />
+
+    
+	</RelativeLayout>  
+   
+</LinearLayout>  

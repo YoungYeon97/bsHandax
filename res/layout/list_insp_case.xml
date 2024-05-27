@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_list_insp_case"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@color/chk_false"
+	 >
+
+	<TextView  
+ 		android:id="@+id/tv_chk"
+	    android:layout_width="0dp" 
+	    android:layout_height="0dp"
+	    android:text = "1"
+	    />
+    <TextView  
+   	    android:id="@+id/tv_case_code"
+   	    android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:text = ""
+ 		/>
+  	
+   	<RelativeLayout
+		android:id="@+id/rl_list_insp_case"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:background="@color/chk_false"
+		>
+		<TextView  
+	 		android:id="@+id/tv_case_name"
+		    android:layout_width="match_parent" 
+		    android:layout_height="wrap_content"
+		    android:textColor="#000000"
+		    android:text = "점검항목"
+		    android:textSize="14dp"
+		    />
+	</RelativeLayout>
+	
+ 
+</LinearLayout>  

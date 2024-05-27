@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <HorizontalScrollView
+	    android:id="@+id/HScrollView01"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+		android:layout_weight = "1"
+         
+        >
+	    <ScrollView
+		    android:id="@+id/ScrollView01"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+   			android:layout_weight = "1"
+		    >
+		   	<TextView  
+				android:id="@+id/txtMsg"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:paddingLeft="10dip"
+		    	android:paddingRight="10dip"
+		    	android:paddingTop="10dip"
+		    	android:paddingBottom="10dip"
+	
+		    	/>
+	   	</ScrollView>
+	</HorizontalScrollView>
+
+	<RelativeLayout
+	    android:id="@+id/LinearLayout01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+        android:layout_weight = "0">
+
+	    <Button
+	        android:id="@+id/bBack"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dip"
+	        android:text="뒤로"
+	        />
+
+	    <Button
+	        android:id="@+id/bOk"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="실행"
+			/>
+	    
+	</RelativeLayout>
+	    
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<TextView
+        android:id="@+id/tv_user_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"/>
+	<TextView
+        android:id="@+id/tv_user_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"/>
+	
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:padding="2dp"
+	    android:gravity="center"
+		android:layout_margin="0dp"
+		android:orientation="vertical"
+	    android:background="@color/white" >
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:padding="2dp"
+		    android:orientation="horizontal" >
+		    
+	        <TextView
+		        android:layout_width="45pt"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:textSize="7pt"
+		        android:layout_gravity="center|right"
+		        android:layout_marginRight="5dp"
+		        android:gravity="right"
+		        android:textColor="@color/lk0"
+		        android:text="시리얼 번호 :"/>
+	
+	        <TextView
+		        android:id="@+id/tv_serial_key"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:textSize="7pt"
+		        android:layout_gravity="center|left"
+		        android:text=""/>
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:padding="2dp"
+		    android:orientation="horizontal" >
+		    
+	        <TextView
+		        android:layout_width="45pt"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:textSize="7pt"
+		        android:layout_gravity="center|right"
+		        android:layout_marginRight="5dp"
+		        android:gravity="right"
+		        android:textColor="@color/lk0"
+		        android:text="요청일시 :"/>
+	
+	        <TextView
+		        android:id="@+id/tv_user_date_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:textSize="7pt"
+		        android:layout_gravity="center|left"
+		        android:text=""/>
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:padding="2dp"
+		    android:orientation="horizontal" >
+		    
+	        <TextView
+		        android:layout_width="45pt"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:textSize="7pt"
+		        android:layout_gravity="center|right"
+		        android:layout_marginRight="5dp"
+		        android:gravity="right"
+		        android:textColor="@color/lk0"
+		        android:text="요청자 이름 :"/>
+	
+	        <EditText
+		        android:id="@+id/et_user_emp_text"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:focusable="true"
+		        android:focusableInTouchMode="true"
+		        android:imeOptions="actionDone"
+		        android:inputType="textCapCharacters"
+				android:privateImeOptions="defaultInputmode=korea"
+				android:maxLength="100"
+		        android:singleLine="true"
+		        android:textSize="7pt"
+		        />
+		</LinearLayout>
+
+	</LinearLayout>
+				
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:stretchColumns="0,1"
+		android:layout_margin="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_weight = "0">
+		<TableRow>
+        
+	        <Button
+	            android:id="@+id/b_ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:text="사용자등록을 요청" />
+	
+	        <Button
+	            android:id="@+id/b_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:text="취소" />
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tl_list_insp_case_chek"
+    	android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:background="@color/chk_false"
+		>
+		
+		<TextView  
+	 		android:id="@+id/tv_chk"
+		    android:layout_width="0dp" 
+		    android:layout_height="0dp"
+		    android:text = "1"
+		    />
+		<TextView  
+	   	    android:id="@+id/tv_reg_sseq"
+	   	    android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:text = "1"
+	 		/>
+	   	<TextView  
+	   	    android:id="@+id/tv_case_code"
+	   	    android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:text = "1"
+	 		/>
+		<TextView  
+	   	    android:id="@+id/tv_chek_code"
+	   	    android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:text = "1"
+	 		/>
+	    
+		<TableRow
+		    android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			>
+			
+			<TextView  
+		 		android:id="@+id/tv_case_name"
+			    android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:textColor="#000000"
+			    android:text = "점검항목"
+			    android:textSize="14dp"
+			    android:layout_weight="1"
+		
+			    />
+	    	<TextView  
+		 		android:id="@+id/tv_chek_name"
+			    android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:textColor="#000000"
+			    android:text = "조치사항"
+			    android:textSize="14dp"
+			    android:layout_weight="1"
+			    
+			    />
+		</TableRow>
+</TableLayout>

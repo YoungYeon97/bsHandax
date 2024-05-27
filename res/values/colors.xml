@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>  <!--검정-->
+    <color name="white">#FFFFFF</color>  <!--흰색-->
+    
+    <color name="lk0">#808080</color>  <!--대기-->
+    <color name="lk1">#4682B4</color>  <!--진행-->
+    <color name="lk2">#FF0000</color>  <!--완료-->
+    <color name="lk3">#FF0000</color>  <!--일치-->
+    <color name="lk9">#DB9073</color>  <!--실패-->
+
+    <color name="mobi_flag_0">#696969</color>  <!--비활성-->
+    <color name="mobi_flag_1">#000000</color>  <!--활성-->
+
+    <color name="jata_flag_0">#FF0000</color>  <!--자타구분(1.자사, 0.타사)-->
+    <color name="jata_flag_1">#0000FF</color>  <!--자타구분(1.자사, 0.타사)-->
+
+    <color name="state_flag_0">#FF0000</color>  <!--상태(0.X 1.O)-->
+    <color name="state_flag_1">#0000FF</color>  <!--상태(0.X 1.O)-->
+    
+    <color name="insp_input_backcolor">#808080</color>  <!--#C0C0C0-->
+    <color name="dialog_backcolor">#000000</color>  <!--#C0C0C0-->
+
+    <color name="chk_true">#696969</color>
+    <color name="chk_false">#FFFFFF</color>
+    <color name="chk_true_text">#FFFFFF</color>
+    <color name="chk_false_text">#000000</color>
+
+    <color name="insp_input_false">#FF0000</color>  <!--비활성-->
+    <color name="insp_input_true">#696969</color>  <!--활성-->
+    
+</resources>

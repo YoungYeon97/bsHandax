@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	
+	>	
+	
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0"
+		android:layout_weight = "0">
+		<TableRow>
+
+		    <EditText
+		        android:id="@+id/et_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        
+		        android:capitalize="characters"
+		        android:hint="@string/bar_code_search_hint"
+		        android:imeOptions="actionSearch"
+		        android:inputType="textCapCharacters"
+		        android:maxLength="50"
+		        android:privateImeOptions="defaultInputmode=english"
+		        android:singleLine="true"
+		        android:textSize="14dp" />
+	
+			<Button
+		        android:id="@+id/b_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingRight="20dp"
+		        android:paddingLeft="20dp"
+		        android:text="@string/b_ok" />
+	
+
+		</TableRow>
+	</TableLayout>
+									
+    <ScrollView
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+		android:layout_weight = "1"
+		>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" >
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@color/insp_input_backcolor"
+			    android:layout_margin="3dp"
+			    android:padding="5dp"
+			    android:orientation="vertical"
+			    
+			    android:radius="15dip"
+			    >
+				<TableLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:stretchColumns="1">
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/bar_code_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- S/N : -->
+				
+					    <EditText
+					        android:id="@+id/et_bar_code"
+					        android:layout_width="wrap_content"
+					        android:enabled="false"
+					        android:singleLine="true"
+					        android:focusable="false"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+					
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/bar_la_name_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- 제품구분 : -->
+				
+					    <EditText
+					        android:id="@+id/et_bar_la_name"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:focusable="false"
+			        		android:focusableInTouchMode="false"
+			        		android:imeOptions="actionDone"
+			        		android:maxLength="100"
+			        		android:singleLine="true"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/maker_name_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:layout_gravity="center|right"
+					        android:layout_weight = "0" />  <!-- 메이커 -->
+				
+					    <TableLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:stretchColumns="0">
+							<TableRow>
+					    
+							    <EditText
+							        android:id="@+id/et_maker_name"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:focusable="false"
+					        		android:focusableInTouchMode="false"
+					        		android:imeOptions="actionDone"
+					        		android:maxLength="100"
+					        		android:singleLine="true"
+							        android:textSize="14dp"
+							        android:paddingRight="10dp"
+							        
+							         />
+							    <EditText
+							        android:id="@+id/et_jata_flag_name"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:focusable="false"
+							        android:text="자타"
+							        android:textSize="14dp"
+							         />
+						    </TableRow>
+					    </TableLayout>
+					    			    
+					</TableRow>
+
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/item_spec_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- 규격 : -->
+
+					    <EditText
+					        android:id="@+id/et_item_spec"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:focusable="false"
+					        android:focusableInTouchMode="false"
+					        android:imeOptions="actionDone"
+					        android:maxLength="25"
+					        android:singleLine="true"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+					
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/line_name_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- 작업라인 : -->
+				
+		
+					    <EditText
+					        android:id="@+id/et_line_name"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:singleLine="true"
+					        android:focusable="false"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+					
+										
+					
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/op_no_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- OP/NO : -->
+				
+		
+					    <EditText
+					        android:id="@+id/et_op_no"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:singleLine="true"
+					        android:focusable="false"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text= "@string/macn_model_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- 머신명 -->
+				
+					    <EditText
+					        android:id="@+id/et_macn_model"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:singleLine="true"
+					        android:focusable="false"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text= "@string/macn_name_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- 판넬명 -->
+				
+					    <EditText
+					        android:id="@+id/et_macn_name"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:singleLine="true"
+					        android:focusable="false"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+					<TableRow>
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/bigo_"
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="right"
+					        android:layout_weight = "0" />  <!-- 비고 : -->
+		
+					    <EditText
+					        android:id="@+id/et_bigo"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:focusable="false"
+					        android:inputType="textCapCharacters|textMultiLine"
+							android:focusableInTouchMode="false"
+					        android:imeOptions="actionDone"
+					        android:lines="3"
+					        android:maxLines="3"
+					        android:minHeight="65dp"
+					        android:scrollbarStyle="outsideOverlay"
+					        android:scrollbars="vertical"
+					        android:singleLine="false"
+					        android:maxLength="1000"
+					        android:textSize="14dp" />
+					    			    
+					</TableRow>
+								
+				</TableLayout>
+			</LinearLayout>	
+			
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@color/insp_input_backcolor"
+			    android:layout_margin="3dp"
+			    android:padding="5dp"
+			    android:orientation="vertical" >
+				<TableLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:stretchColumns="1">
+					<TableRow>
+					    
+					    <TextView
+					        android:layout_width="75dp"
+					        android:layout_height="wrap_content"
+					        android:text="@string/chek_text_"  
+					        android:textColor="#000000"
+					        android:paddingRight="10dp"
+					        android:gravity="center|right"
+					        android:layout_weight = "0" />  <!-- 조치 : -->
+				
+					    <EditText
+					        android:id="@+id/et_chek_text"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:focusable="false"
+					        android:focusableInTouchMode="false"
+					        android:imeOptions="actionDone"
+					        android:lines="2"
+					        android:maxLines="2"
+					        android:minHeight="40dp"
+					        android:scrollbarStyle="outsideOverlay"
+					        android:scrollbars="horizontal"
+					        android:singleLine="false"
+					        android:maxLength="1000"
+					        android:textSize="14dp" />
+					    					    					    			    
+					</TableRow>
+				</TableLayout>
+			</LinearLayout>	
+							    
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:focusable="false" >
+			    <TextView
+			        android:id="@+id/tv_chek_text_his"
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tv_chek_text_his"
+			        android:focusable="false"
+			        android:gravity="left" /><!-- 이력없음 -->
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/linLayoutDrugList"
+			    android:layout_width="fill_parent"
+			    android:layout_height="200dp"
+			    android:focusable="false"
+			    android:focusableInTouchMode="false"
+			    android:orientation="vertical" >
+			   	
+			</LinearLayout>	
+								    		    			
+					    		
+		</LinearLayout>
+	</ScrollView>
+	
+    			
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:stretchColumns="0,1,2,3,4"
+		android:layout_weight = "0">
+		<TableRow>
+	    
+		    <Button
+		        android:id="@+id/b_delete"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:focusable="false"
+		        android:text="@string/b_delete" /><!-- 삭제 -->
+
+		    <Button
+		        android:id="@+id/b_rec"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:focusable="false"
+		        android:text="@string/b_rec" /><!-- 녹음 -->
+		    <Button
+		        android:id="@+id/b_pic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:focusable="false"
+		        android:text="@string/b_pic" /><!-- 사진 -->
+		    
+		    <Button
+		        android:id="@+id/b_close"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:focusable="false"
+		        android:text="@string/b_close" /><!-- 닫기 -->
+		    	    
+		</TableRow>
+	</TableLayout>
+				
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="woodnsoft.bsHandax2"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/bshandax"
+        android:label="@string/app_name" >
+        <activity
+            android:name="woodnsoft.bsHandax.BsHandaxActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        	
+        </activity>
+        
+        <activity android:name="woodnsoft.bsHandax.DataGet" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.DataGet_Detail" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.DataGet_insp" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.Detail" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.DataPut" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.DataPut_Search" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name="woodnsoft.bsHandax.Insp" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.Insp_Search" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name="woodnsoft.bsHandax.Insp_Input" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden" ></activity>
+        <activity android:name="woodnsoft.bsHandax.Dialog_sle" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"  ></activity>
+        <activity android:name="woodnsoft.bsHandax.Dialog_mle" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"  ></activity>
+        <activity android:name="woodnsoft.bsHandax.Insp_Case_Chek" android:screenOrientation="portrait" ></activity>
+        <activity android:name="woodnsoft.bsHandax.Dialog_seri_appr_chk" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"  ></activity>
+        
+	</application>
+
+ 	<!--인터넷 연결 유무 체크 -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+	<!--파일관리 권한 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>   
+</manifest>

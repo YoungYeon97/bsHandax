@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	>	
+	<TableLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0">
+		<TableRow>
+		    <EditText
+		        android:id="@+id/et_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:hint="시리얼번호를 입력하세요!"
+		        android:imeOptions="actionSearch"
+		        android:inputType="textCapCharacters"
+		        android:privateImeOptions="defaultInputmode=english"
+		    	android:paddingRight="5dip"
+		        android:singleLine="true"
+		        android:textSize="14dp" />
+	
+			<Button
+		        android:id="@+id/b_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" 조회 " />
+
+		</TableRow>
+	</TableLayout>
+			
+	<LinearLayout 
+		android:id="@+id/linLayoutDrugList" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+        android:layout_weight = "1"
+		>
+	</LinearLayout>	
+			    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight = "0"
+        >
+
+        <Button
+            android:id="@+id/bBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="뒤로" />
+    </LinearLayout>
+				
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight = "1">
+
+	    <TextView
+	        android:id="@+id/tv"
+	        android:layout_width="60dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:textSize="16dp"
+	        android:text="@string/item_spec_"/>  <!-- 규격 : -->
+	
+		<EditText
+	        android:id="@+id/et"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:imeOptions="actionDone"
+	        android:inputType="textCapCharacters"
+			android:privateImeOptions="defaultInputmode=english"
+		    android:maxLength="25"
+	        android:singleLine="true"
+	        android:textSize="14dp" />
+    </LinearLayout>
+
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:stretchColumns="0,1"
+		android:layout_margin="10dp"
+		android:layout_weight = "0">
+		<TableRow>
+        
+	        <Button
+	            android:id="@+id/b_ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:text="@string/b_ok" />  <!-- 확인 -->
+	
+	        <Button
+	            android:id="@+id/b_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:text="@string/b_cancel" />  <!-- 취소 -->
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"  
+ 	android:orientation="vertical"
+ 	>
+	
+    <TextView  
+ 		android:id="@+id/tv_reg_no"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text = ""
+	    />   
+    	
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0">
+		<TableRow>
+			<TextView  
+		 		android:id="@+id/tv_fact_sub_name"  
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:textSize="8pt"
+			    android:text = "세부공장"
+		    	/>
+			<TextView  
+		 		android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:textSize="6pt"
+			    android:padding="5dp"
+			    android:text = "점검코드:"
+			    android:layout_gravity="center_vertical"
+			    />
+	    	<TextView  
+		 		android:id="@+id/tv_lk_insp_no"  
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:textSize="7pt"
+			    android:text = "0000-0000"
+			    android:layout_gravity="center_vertical"
+			    />
+		</TableRow>
+	</TableLayout>
+
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+		<TableRow>
+			<TextView  
+			    android:id="@+id/tv_reg_date"
+				android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight = "4"
+			    android:singleLine="true"
+	       	    android:paddingRight="7px"
+			    android:textSize="6pt"
+			    android:textColor="#FFE4C4"
+			    android:text = "" 
+			    />
+			<TextView  
+		 		android:id="@+id/tv_emp_name"  
+			    android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight = "3"
+			    android:singleLine="true"
+	       	    android:textSize="6pt"
+			    android:text = ""
+			    />
+					    
+			<TextView  
+		 		android:id="@+id/tv_qty"  
+			    android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight = "2"
+			    android:singleLine="true"
+	       	    android:textSize="6pt"
+				android:layout_marginRight="40dp"
+				android:gravity="right"
+			    android:text = ""
+			    />
+	
+	 		<TextView  
+		 		android:id="@+id/tv_put_flag"  
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight = "0"
+			    android:singleLine="true"
+	       	    android:textColor= "@color/lk0"
+			    android:textSize="6pt"
+				android:text = "대기"
+			    />
+		</TableRow>
+	</TableLayout>	   
+
+</LinearLayout>  

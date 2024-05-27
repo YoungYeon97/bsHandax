@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	>	
+	<TableLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0">
+		<TableRow>
+		    <EditText
+		        android:id="@+id/et_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:hint="시리얼번호를 입력하세요!"
+		        android:imeOptions="actionSearch"
+		        android:inputType="textCapCharacters"
+		        android:privateImeOptions="defaultInputmode=english"
+		    	android:paddingRight="5dip"
+		        android:singleLine="true"
+		        android:textSize="14dp" />
+	
+			<Button
+		        android:id="@+id/b_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingRight="20dp"
+		        android:paddingLeft="20dp"
+		        android:text="@string/b_search" />  <!-- 조회 -->
+	
+		    <Button
+		        android:id="@+id/b_input"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:focusable="true"
+		        android:focusableInTouchMode="false"
+		        android:paddingRight="20dp"
+		        android:paddingLeft="20dp"
+		        android:text="@string/b_input" />  <!-- 입력 -->
+
+		</TableRow>
+	</TableLayout>
+
+	
+	
+	
+	
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="2pt"
+		android:background="#696969"
+		>
+	</LinearLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="#808080"
+		>
+		<TextView  
+	 		android:id="@+id/tv_bar_code"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+		    android:textSize="7pt"
+		    android:textColor="#FAFAD2"
+		    android:text = "@string/bar_code"/>  <!-- 시리얼번호 -->
+    	<TextView  
+	 		android:id="@+id/tv_item_spec"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:textSize="6pt"
+		    android:paddingLeft="5dp"
+		    android:textColor="#FAFAD2"
+		    android:text = "@string/item_spec"/>  <!-- 규격 -->
+	</RelativeLayout>
+				
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dip"
+		android:background="#808080"
+		>
+
+		<TableRow>
+	        <TextView
+		        android:layout_width="15pt"
+		        android:layout_height="wrap_content"
+		    	android:layout_weight="0"
+		        android:textSize="6pt"
+		        android:textColor="#FAFAD2"
+		        android:text="@string/jata_flag" />  <!-- 자타 -->
+	        
+			<TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		        android:textSize="6pt"
+		        android:textColor="#FAFAD2"
+		        android:singleLine="true"
+	    	    android:text="@string/line_name" />  <!-- 작업라인 -->
+	    	<TextView
+	    	    android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		        android:textSize="6pt"
+		        android:textColor="#FAFAD2"
+		        android:singleLine="true"
+	    	    android:text="@string/macn_name"/>  <!-- 판넬명 -->
+										
+	    	<TextView
+	    	    android:layout_width="15pt"
+		        android:layout_height="wrap_content"
+		    	android:layout_weight="0"
+		        android:textSize="6pt"
+		        android:textColor="#FAFAD2"
+		    	android:gravity="center"
+		        android:text="@string/state_flag"/>  <!-- 상태 -->
+		</TableRow>
+		
+	</TableLayout>
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dip"
+	    android:background="#808080"
+		android:paddingBottom="2dp"
+	    >
+
+		<TableRow>
+	    	<TextView  
+			    android:id="@+id/tv_op_no"
+				android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+	       	    android:textSize="6pt"
+			    android:textColor="#FAFAD2"
+		        android:text = "@string/op_no"/>  <!-- OP/NO -->
+			<TextView  
+		 		android:id="@+id/tv_bigo"  
+			    android:layout_width="0dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+	       	    android:textSize="6pt"
+			    android:textColor="#FAFAD2"
+		        android:singleLine="true"
+			    android:text = "@string/bigo"/>  <!-- 비고 -->
+		</TableRow>
+	</TableLayout>
+			
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="2pt"
+		android:background="#696969"
+		>
+	</LinearLayout>	
+	
+	
+	
+	
+	
+	
+	<LinearLayout 
+		android:id="@+id/linLayoutDrugList" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+        android:layout_weight = "1"
+		>
+	</LinearLayout>	
+			    
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight = "0"
+		>
+		<TextView
+	        android:id="@+id/tv_result"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="검색된 데이타가 존재하지 않습니다."
+	        android:paddingRight="10dp"
+	        android:layout_weight = "0" />
+	</LinearLayout>	
+				
+</LinearLayout>

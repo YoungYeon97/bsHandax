@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="MSG_TITLE">BS HANDAX2</string>
+    <string name="app_name">BS HANDAX2</string>
+
+    <string name="bar_code_search_hint">S/N를 입력하세요!</string>
+    
+    
+    <string name="tv_chek_text_his">☞ 이력없음</string>
+    <string name="tv_chek_text_his_exists1">☞ 이력 총 </string>
+    <string name="tv_chek_text_his_exists2">건</string>
+    
+    <!-- ★★★ 버튼 ★★★ -->
+    <string name="b_ok">확인</string>
+    <string name="b_cancel">취소</string>
+    <string name="b_search">조회</string>
+    <string name="b_input">입력</string>
+    <string name="b_delete">삭제</string>
+    <string name="b_rec">녹음</string>
+    <string name="b_pic">사진</string>
+    <string name="b_close">닫기</string>
+    
+    
+    <!-- ★★★ 컬럼값 ★★★ -->
+    <string name="bar_la_name">제품구분</string>  <!-- S/N -->
+    <string name="bar_code">S/N</string>          <!-- S/N -->
+    <string name="item_spec">모델</string>        <!-- 규격 -->
+    <string name="line_name">작업라인</string>    <!-- 작업라인 -->
+    <string name="op_no">OP/NO</string>           <!-- OP/NO -->
+    <string name="macn_model">머신명</string>     <!-- 머신모델명 -->
+    <string name="macn_name">판넬명</string>      <!-- 머신명 -->
+    <string name="maker_name">브랜드</string>     <!-- 메이커 -->
+    <string name="bigo">비고</string>             <!-- 비고 -->
+    <string name="chek_text">조치</string>        <!-- 조치 -->
+    <string name="jata_flag">자타</string>        <!-- 자타 -->
+    <string name="state_flag">상태</string>       <!-- 상태 -->
+    
+
+    <string name="bar_la_name_">제품구분 :</string>  <!-- S/N -->
+    <string name="bar_code_">S/N :</string>          <!-- S/N -->
+    <string name="item_spec_">모델 :</string>        <!-- 규격 -->
+    <string name="line_name_">작업라인 :</string>    <!-- 작업라인 -->
+    <string name="op_no_">OP/NO :</string>           <!-- OP/NO -->
+    <string name="macn_model_">머신명 :</string>     <!-- 머신모델명 -->
+    <string name="macn_name_">판넬명 :</string>      <!-- 머신명 -->
+    <string name="maker_name_">브랜드 :</string>     <!-- 메이커 -->
+    <string name="bigo_">비고:</string>              <!-- 비고 -->
+    <string name="chek_text_">조치 :</string>        <!-- 조치 -->
+    
+</resources>

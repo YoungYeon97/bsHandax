@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_list_insp_history"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+   	<TextView  
+   	    android:id="@+id/tv_reg_no"
+   	    android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:text = "1"
+ 		/>
+   	<TextView  
+   	    android:id="@+id/tv_reg_seq"
+   	    android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:text = "1"
+ 		/>
+    
+   	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:paddingLeft="20dp">
+		<TextView  
+	 		android:id="@+id/tv_reg_date"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+		    android:textSize="6pt"
+		    android:focusable="false"
+		    android:text = "1900.01.01"
+		    />
+    	<TextView  
+	 		android:id="@+id/tv_chek_text"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="6pt"
+		    android:layout_toRightOf="@id/tv_reg_date"
+			android:paddingLeft="10dp"
+			android:focusable="false"
+		    android:text = "조치사항"
+		    />
+	</RelativeLayout>
+	
+ 
+</LinearLayout>  

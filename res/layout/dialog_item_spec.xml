@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+	<TableLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0">
+		<TableRow>
+
+		    <EditText
+		        android:id="@+id/et_filter"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:hint="필터링 또는 입력할 문자를 입력하세요!"
+		        android:imeOptions="actionSearch"
+		        android:inputType="textCapCharacters"
+		        android:capitalize="characters"
+		        android:paddingRight="5dip"
+		        android:privateImeOptions="defaultInputmode=english"
+		        android:singleLine="true"
+		        android:textSize="14dp" />
+	
+			
+
+		</TableRow>
+	</TableLayout>
+			
+	<LinearLayout 
+		android:id="@+id/linLayoutDrugList" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+        android:layout_weight = "1"
+		android:layout_marginTop="3dp"
+	    android:background="@color/dialog_backcolor"
+		>
+	</LinearLayout>	
+
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:stretchColumns="0,1,2"
+		android:layout_marginTop="5dp"
+		android:layout_weight = "0">
+		<TableRow>
+        
+	        <Button
+	            android:id="@+id/b_null"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:text="입력안함" />
+	        <Button
+	            android:id="@+id/b_ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:text="확인" />
+	        <Button
+	            android:id="@+id/b_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:text="취소" />
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

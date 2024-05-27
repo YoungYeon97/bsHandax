@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight = "0"
+		android:layout_margin="2dp"
+		android:stretchColumns="1">
+		<TableRow>
+	        <TextView
+		        android:layout_width="70dp"
+			    android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:paddingRight="5dp"
+		        android:text="제조사 : " />
+	    	<EditText
+	    	    android:id="@+id/et_make_name"
+	    	    android:enabled="false"
+	    	    android:focusable="false"
+	    	    android:focusableInTouchMode="false"
+	    	    android:text="미수신"/>
+		</TableRow>
+		
+		<TableRow>
+	    	<TextView
+		        android:layout_width="70dp"
+			    android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:paddingRight="5dp"
+		        android:text="공장 : " />
+	    	<EditText
+	    	    android:id="@+id/et_fact_name"
+	    	    android:enabled="false"
+	    	    android:focusable="false"
+	    	    android:focusableInTouchMode="false"
+	    	    android:text="미수신" />
+		</TableRow>
+
+		<TableRow>
+			<TextView
+		        android:layout_width="70dp"
+			    android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:paddingRight="5dp"
+		        android:text="세부공장 :" />
+		    <Spinner
+		        android:id="@+id/sp_fact_sub"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"/>
+		</TableRow>
+	    				
+		
+	</TableLayout>
+				
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight = "0"
+        >	
+		<CheckBox
+	        android:id="@+id/cb_mobi_flag"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text=" 과거 점검내역 불러오기" />
+		
+	</LinearLayout>
+	    		
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight = "0"
+		android:layout_margin="2dp"
+		android:stretchColumns="1">
+		
+		<TableRow>
+			<TextView
+		        android:id="@+id/tv_insp_reg_no"
+		        android:layout_width="70dp"
+			    android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:paddingRight="5dp"
+		        android:text="점검코드 :" />
+		    <Spinner
+		        android:id="@+id/sp_insp_reg_no"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"/>
+		</TableRow>
+	    				
+		<TableRow>
+	        <TextView
+		        android:id="@+id/tv_emp"
+		        android:layout_width="70dp"
+			    android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:paddingRight="5dp"
+		        android:text="작업자 :" />
+		    <Spinner
+		        android:id="@+id/sp_emp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"/>
+		</TableRow>
+	    				
+		<TableRow>
+	        <TextView
+		        android:id="@+id/tv_et_reg_date"
+	            android:layout_width="70dp"
+			    android:layout_height="wrap_content"
+		        android:layout_gravity="center|right"
+		        android:paddingRight="5dp"
+		        android:text="작업일자 :" />
+
+		    <EditText
+		        android:id="@+id/et_reg_date"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="1900.01.01"
+		        android:focusable="false"/>
+		</TableRow>
+		
+	</TableLayout>
+	
+	
+		
+		<LinearLayout 
+			android:id="@+id/ll_list_dataput" 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="0dp"
+			android:layout_weight = "20"
+			>
+		</LinearLayout>
+	
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="0dp"
+			android:layout_weight = "1"
+			>
+		</LinearLayout>
+	
+				
+	<RelativeLayout
+	    android:id="@+id/LinearLayout01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight = "0"
+		android:gravity="bottom|left" >
+
+	    <Button
+	        android:id="@+id/bBack"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dip"
+	        android:text="뒤로" />
+
+	    <Button
+	        android:id="@+id/bOk"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="실행" />
+	</RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+	>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight = "1"
+        android:layout_marginBottom="60dp"
+        >
+   		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:layout_marginBottom="10dp"
+	        android:layout_weight="2"
+	        >
+			    <Button
+			        android:id="@+id/b_dataget"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="BS DATA 수신 ..."
+			        android:textSize="16dp"
+		   			android:layout_weight = "1"
+		   			/>
+			    
+			    <Button
+			        android:id="@+id/b_bs"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="BS 점검관리 ..."
+			        android:textSize="16dp"
+		   			android:layout_weight = "1"
+		   			/>
+   		    			    
+			    <Button
+			        android:id="@+id/b_dataput"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="BS DATA 전송 ..."
+			        android:textSize="16dp"
+		   			android:layout_weight = "1"
+		   			/>
+			
+			    
+			</LinearLayout>
+
+   		
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:baselineAligned="false"
+	        android:orientation="horizontal"
+	        android:layout_weight = "1" 
+	        >
+	
+	        <TextView
+	            android:id="@+id/tv_make"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginTop="12dp"
+	            android:textSize="16dp"
+	            android:textColor="@color/lk0"
+	            android:text="공장 :" />
+	
+	        <TextView
+	            android:id="@+id/tv_fact_make"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginTop="12dp"
+	            android:textSize="16dp"
+	            android:text="미수신" />
+	
+		</LinearLayout>
+   				
+	</LinearLayout>
+   			    	
+    
+
+	<RelativeLayout
+	    android:id="@+id/LinearLayout01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+        android:layout_weight = "0">
+        
+        <Button
+            android:id="@+id/bclose"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+	        android:layout_gravity="bottom|right"
+            android:layout_alignParentRight="true"
+	        android:text="종료" />
+        
+	</RelativeLayout>
+
+	
+</LinearLayout>
